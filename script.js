@@ -1,8 +1,8 @@
 function calcular_idade() {
-    
+
 }
 
-function limpa_formulário_cep() {
+function limpa_formulario_cep() {
     document.getElementById('rua').value=("");
     document.getElementById('bairro').value=("");
     document.getElementById('cidade').value=("");
@@ -19,7 +19,7 @@ function meu_callback(conteudo) {
         document.getElementById('ibge').value=(conteudo.ibge);
     }
     else {
-        limpa_formulário_cep();
+        limpa_formulario_cep();
         alert("CEP não encontrado.");
     }
 }
@@ -46,11 +46,11 @@ function pesquisacep(valor) {
             document.body.appendChild(script);
         }
         else {
-            limpa_formulário_cep();
+            limpa_formulario_cep();
             alert("Formato de CEP inválido.");
         }
     }
     else {
-        limpa_formulário_cep();
+        limpa_formulario_cep();
     }
 };

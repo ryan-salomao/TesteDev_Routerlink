@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <title>Formulário</title>
 </head>
@@ -51,20 +51,20 @@
                         <label for="endereco"><b>Endereço (CEP): </b>
                         <input type="text" id="endereco" name="endereco" pattern="[0-9]{5}-[0-9]{3}" placeholder="xxx-xxxxx" required
                             onblur="pesquisacep(this.value);" /></label><br>
+                        <label><b>Estado: </b>
+                        <input type="text" id="uf" name="uf" size="2" /></label><br>
+                        <label><b>Cidade: </b>
+                        <input type="text" id="cidade" name="cidade" size="40" /></label><br>
+                        <label><b>IBGE: </b>
+                        <input type="text" id="ibge" name="ibge" size="8" /></label><br>
+                        <label><b>Bairro: </b>
+                        <input type="text" id="bairro" name="bairro" size="40" /></label><br>
                         <label><b>Rua: </b>
                         <input type="text" id="rua" name="rua" size="60" /></label><br>
                         <label><b>Número: </b>
                         <input type="text" id="numero" name="numero" size="4" /></label><br>
                         <label><b>Complemento: </b>*opcional
                         <input type="text" id="complemento" name="complemento" size="50" /></label><br> 
-                        <label><b>Bairro: </b>
-                        <input type="text" id="bairro" name="bairro" size="40" /></label><br>
-                        <label><b>Cidade: </b>
-                        <input type="text" id="cidade" name="cidade" size="40" /></label><br>
-                        <label><b>Estado: </b>
-                        <input type="text" id="uf" name="uf" size="2" /></label><br>
-                        <label><b>IBGE: </b>
-                        <input type="text" id="ibge" name="ibge" size="8" /></label><br>
                     </div>
                     <div class="center-align">
                         <br><input class="waves-effect waves-light btn-small card-panel teal lighten-1 z-depth-3 white-text" type="submit" value="Enviar" />
