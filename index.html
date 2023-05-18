@@ -4,40 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <title>Formulário</title>
 </head>
 <body>
-    <h1>Formulário de Cadastro</h1>
+    <div class="center-align">
+        <h1>Formulário de Cadastro</h1><br>
 
-    <div>
-        <fieldset>
+    </div>
+    <div class="row">
+        <div class="col s6 offset-s3">
             <form action="null">
-                <div>
-                    <label for="Nome">Nome: </label>
-                    <input type="text" id="Nome" name="nome">
-                </div>
-                <div>
-                    <label for="Data_Nascimento">Data de Nascimento: </label>
-                    <input type="date" id="Data_Nascimento" name="data_nascimento">
-                </div>
-                <div>
-                    <label for="Genero">Gênero: </label><br>
-                    <input type="radio" id="Genero" name="genero" value="masculino">Masculino<br>
-                    <input type="radio" id="Genero" name="genero" value="feminino">Feminino<br>
-                </div>
-                <div>
-                    <label for="Idade">Idade: </label>
-                    <input type="text" id="Idade" name="idade">
-                </div>
-                <div>
-                    <label for="Endereco">Endereço: </label>
-                    <input type="text" id="Endereco" name="endereco">
-                </div>
-                <div>
-                    <br><input type="button" value="Enviar">
-                </div>
+                <fieldset class="customForm">
+                    <div>
+                        <label for="Nome"><b>Nome: </b></label>
+                        <input type="text" id="Nome" name="nome">
+                    </div>
+                    <div>
+                        <label for="Data_Nascimento"><b>Data de Nascimento: </b></label>
+                        <input type="date" id="Data_Nascimento" name="data_nascimento">
+                    </div>
+                    <div>
+                        <label for="Genero"><b>Gênero: </b>
+                            <p>
+                                <label>
+                                    <input class="with-gap" type="radio" id="Genero" name="genero" value="masculino" />
+                                    <span>Masculino</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input class="with-gap" type="radio" id="Genero" name="genero" value="feminino" />
+                                    <span>Feminino</span>
+                                </label>
+                            </p>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="Idade"><b>Idade: </b></label>
+                        <input type="text" id="Idade" name="idade">
+                    </div>
+                    <div>
+                        <label for="Endereco"><b>Endereço: </b></label>
+                        <input type="text" id="Endereco" name="endereco" pattern="[0-9]{5}-[0-9]{3}" placeholder="xxx-xxxxx">
+                    </div>
+                    <div class="center-align">
+                        <br><input class="waves-effect waves-light btn-small card-panel teal lighten-1 z-depth-3 white-text" type="submit" value="Enviar">
+                    </div>
+                </fieldset>
             </form>
-        </fieldset>
+        </div>
     </div>
 </body>
 </html>
