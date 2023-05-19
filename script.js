@@ -1,5 +1,25 @@
 function calcular_idade() {
+    var nascimento = document.querySelector('input#data_nascimento').value;
+    var [ano, mes, dia] = nascimento.split('-').map(Number);
+    var idade = 0;
+    dataAtual = new Date();
 
+    if (mes-1 < dataAtual.getMonth()) {
+        idade = dataAtual.getFullYear() - ano;
+    }
+    else if (mes-1 == dataAtual.getMonth()) {
+        if (dia >= dataAtual.getDate()) {
+            idade = dataAtual.getFullYear() - ano;
+        }
+        else {
+            idade = dataAtual.getFullYear() - ano - 1;
+        }
+    }
+    else {
+        idade = dataAtual.getFullYear() - ano - 1;
+    }
+    
+    document.getElementById('idade').value=(idade);
 }
 
 function limpa_formulario_cep() {
