@@ -41,6 +41,10 @@ function calcular_idade() {
     }
 }
 
+function focus_numero() {
+    document.getElementById('numero').focus();
+}
+
 function limpa_formulario_cep() {
     document.getElementById('rua').value=("");
     document.getElementById('bairro').value=("");

@@ -27,7 +27,7 @@
                         <div>
                             <label for="data_nascimento"><b>Data de Nascimento: </b>
                             <input type="date" id="data_nascimento" name="data_nascimento" required
-                            onblur="calcular_idade()" /></label><br>
+                            onblur="calcular_idade();" /></label><br>
                         </div>
                         <div>
                             <label for="genero"><b>Gênero: </b>
@@ -52,7 +52,7 @@
                         <div>
                             <label for="endereco"><b>Endereço (CEP): </b>
                             <input type="text" id="endereco" name="endereco" pattern="[0-9]{5}-[0-9]{3}" placeholder="xxxxx-xxx" required
-                                onblur="pesquisacep(this.value);" /></label><br>
+                                onblur="pesquisacep(this.value); focus_numero();" /></label><br>
                         </div>
                         <div>
                             <label><b>Estado: </b>
