@@ -1,3 +1,7 @@
+function limpa_formulario_data_nascimento() {
+    document.getElementById('data_nascimento').value=("");
+}
+
 function calcular_idade() {
     var nascimento = document.querySelector('input#data_nascimento').value;
     var [ano, mes, dia] = nascimento.split('-').map(Number);
@@ -18,8 +22,23 @@ function calcular_idade() {
     else {
         idade = dataAtual.getFullYear() - ano - 1;
     }
-    
-    document.getElementById('idade').value=(idade);
+
+    if (idade < 0) {
+        alert("Data de Nascimento inválida. *Não existe");
+        limpa_formulario_data_nascimento();
+    }
+    else if (idade == 0) {
+        alert("Data de Nascimento inválida. *Menos de 1 ano");
+        limpa_formulario_data_nascimento();
+    }
+    // caso seja necessário validação de idade:
+    // else if (idade < 18) {
+        // alert("Data de Nascimento inválida. *Menor de idade");
+        // limpa_formulario_data_nascimento();
+    // }
+    else {
+        document.getElementById('idade').value=(idade);
+    }
 }
 
 function limpa_formulario_cep() {
