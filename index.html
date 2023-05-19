@@ -5,9 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <title>Formulário</title>
 </head>
 <body>
@@ -25,8 +23,8 @@
                             <input type="text" id="nome" name="nome" size="40" required />
                         </div>
                         <div>
-                            <label for="data_nascimento"><b>Data de Nascimento: </b>       <!-- data atual -->
-                            <input type="date" id="data_nascimento" name="data_nascimento" max="" required
+                            <label for="data_nascimento"><b>Data de Nascimento: </b>
+                            <input type="date" id="data_nascimento" name="data_nascimento" required
                             onblur="calcular_idade();" /></label><br>
                         </div>
                         <div>
@@ -90,5 +88,7 @@
             </div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
