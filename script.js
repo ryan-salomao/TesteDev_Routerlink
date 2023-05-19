@@ -96,4 +96,4 @@ function pesquisacep(valor) {
     else {
         limpa_formulario_cep();
     }
-};
+}
